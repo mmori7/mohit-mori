@@ -1,7 +1,6 @@
 
 # Mohit Mori - Portfolio
 
-![Portfolio Preview](/lovable-uploads/27ec65a9-adbf-430f-b456-2341d784e8c9.png)
 
 ## About Me
 Computer Science student at California State University, Long Beach with a strong passion for software development and artificial intelligence. Currently maintaining a 3.45 GPA while working on innovative projects and participating in academic organizations.
@@ -43,7 +42,7 @@ Computer Science student at California State University, Long Beach with a stron
 ## 🔗 Connect With Me
 - [LinkedIn](https://www.linkedin.com/in/mohit77/)
 - [GitHub](https://github.com/mmori7)
-- [Portfolio Website](https://portfolio-mohit-mori.vercel.app/)
+- [Portfolio Website](https://mohit-mori.vercel.app/)
 
 ## 📫 Contact
 Feel free to reach out to me for collaborations or opportunities!
