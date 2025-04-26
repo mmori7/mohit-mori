@@ -5,6 +5,7 @@ import { NavigationMenu, NavigationMenuList, NavigationMenuItem, NavigationMenuL
 const Navbar = () => {
   const menuItems = [
     { title: "About", to: "hero" },
+    { title: "Experience", to: "experience" },
     { title: "Education", to: "education" },
     { title: "Projects", to: "projects" },
     { title: "Skills", to: "skills" },
