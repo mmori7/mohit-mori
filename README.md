@@ -1,6 +1,7 @@
 
-# Mohit Mori - Portfolio
+# Mohit Mori - Portfolio Website
 
+A modern, responsive portfolio website built with React and TypeScript.
 
 ## About Me
 Computer Science student at California State University, Long Beach with a strong passion for software development and artificial intelligence. Currently maintaining a 3.45 GPA while working on innovative projects and participating in academic organizations.
@@ -28,22 +29,30 @@ Computer Science student at California State University, Long Beach with a stron
 - Contributing to open-source projects
 - Participating in hackathons and coding competitions
 
-## 🏆 Achievements
-- Goldman Sachs Certificate for Database Problem Solving
-- [Additional achievements to be listed]
+## 🛠 Tech Stack
+- **Frontend**: React, TypeScript, Tailwind CSS
+- **Programming**: JavaScript, Python, Java
+- **Database**: SQL, MongoDB
+- **Tools**: Git, REST APIs
+- **Cloud**: AWS, Firebase
 
-## 🛠 Technical Skills
-- Programming Languages: JavaScript, TypeScript, Python, Java
-- Web Technologies: React, Node.js, HTML5, CSS3
-- Database Management: SQL, MongoDB
-- Tools & Frameworks: Git, REST APIs, TailwindCSS
-- Cloud Platforms: AWS, Firebase
-
-## 🔗 Connect With Me
+## 🔗 Connect
 - [LinkedIn](https://www.linkedin.com/in/mohit77/)
 - [GitHub](https://github.com/mmori7)
-- [Portfolio Website](https://mohit-mori.vercel.app/)
+- [Portfolio](https://mohit-mori.vercel.app/)
 
-## 📫 Contact
-Feel free to reach out to me for collaborations or opportunities!
+## Development
+This project is built with:
+- React
+- TypeScript
+- Tailwind CSS
+- Vite
 
+To run locally:
+\```bash
+npm install
+npm run dev
+\```
+
+## License
+MIT License
