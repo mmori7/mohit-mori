@@ -8,7 +8,7 @@ const HeroSection = () => {
       <div className="text-center space-y-8 max-w-3xl animate-fade-in">
         <div className="relative w-64 h-64 md:w-80 md:h-80 mx-auto rounded-full overflow-hidden mb-8 shadow-2xl border-4 border-white transition-transform duration-300 hover:scale-105">
           <img
-            src="/lovable-uploads/27d7c5f7-cbbb-47a6-9a27-f3e6cc7dbede.png"
+            src="/lovable-uploads/e899cef6-acaa-4076-bc1e-35accbbcb03f.png"
             alt="Mohit Mori"
             className="w-full h-full object-cover object-center"
           />
@@ -19,7 +19,7 @@ const HeroSection = () => {
         <p className="text-xl md:text-2xl text-gray-700">
           Computer Science Student & Software Developer
         </p>
-        <div className="bg-white/80 p-6 rounded-lg shadow-lg backdrop-blur-sm max-w-2xl mx-auto">
+        <div className="bg-gradient-to-r from-purple-100 to-indigo-100 p-6 rounded-lg shadow-lg backdrop-blur-sm max-w-2xl mx-auto border border-indigo-200">
           <p className="text-lg text-gray-700 leading-relaxed">
             Passionate computer science student at California State University, Long Beach with a strong interest in software development and AI. I love building innovative solutions that solve real-world problems, and I'm constantly expanding my skills through personal projects and academic pursuits.
           </p>
