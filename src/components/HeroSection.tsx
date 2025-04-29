@@ -19,7 +19,7 @@ const HeroSection = () => {
         <p className="text-xl md:text-2xl text-gray-700">
           Computer Science Student & Software Developer
         </p>
-        <div className="bg-gradient-to-r from-purple-100 to-indigo-100 p-6 rounded-lg shadow-lg backdrop-blur-sm max-w-2xl mx-auto border border-indigo-200">
+        <div className="bg-white/80 p-6 rounded-lg shadow-lg backdrop-blur-sm max-w-2xl mx-auto">
           <p className="text-lg text-gray-700 leading-relaxed">
             Passionate computer science student at California State University, Long Beach with a strong interest in software development and AI. I love building innovative solutions that solve real-world problems, and I'm constantly expanding my skills through personal projects and academic pursuits.
           </p>
