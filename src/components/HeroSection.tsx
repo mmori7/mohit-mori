@@ -4,36 +4,36 @@ import { Button } from "@/components/ui/button";
 
 const HeroSection = () => {
   return (
-    <div className="min-h-[90vh] flex flex-col justify-center items-center bg-gradient-to-br from-blue-50 to-blue-100 px-4 pt-16" id="hero">
-      <div className="text-center space-y-8 max-w-3xl animate-fade-in">
-        <div className="relative w-64 h-64 md:w-80 md:h-80 mx-auto rounded-full overflow-hidden mb-8 shadow-2xl border-4 border-white transition-transform duration-300 hover:scale-105">
+    <div className="min-h-[90vh] flex flex-col justify-center items-center bg-gradient-to-br from-blue-50 to-blue-100 px-4 pt-16 md:pt-20" id="hero">
+      <div className="text-center space-y-6 md:space-y-8 max-w-3xl animate-fade-in">
+        <div className="relative w-40 h-40 sm:w-56 sm:h-56 md:w-64 md:h-64 lg:w-80 lg:h-80 mx-auto rounded-full overflow-hidden mb-4 md:mb-8 shadow-2xl border-4 border-white transition-transform duration-300 hover:scale-105">
           <img
-            src="/lovable-uploads/07cb13c6-c29e-44c7-91d4-7350e60f9202.png"
+            src="/lovable-uploads/42c3c688-ea3d-43a8-b461-db0d5be31f73.png"
             alt="Mohit Mori"
             className="w-full h-full object-cover object-center"
           />
         </div>
-        <h1 className="text-5xl md:text-6xl font-bold text-gray-900">
+        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900">
           Mohit Mori
         </h1>
-        <p className="text-xl md:text-2xl text-gray-700">
+        <p className="text-lg sm:text-xl md:text-2xl text-gray-700">
           Computer Science Student & Software Developer
         </p>
-        <div className="bg-white/80 p-6 rounded-lg shadow-lg backdrop-blur-sm max-w-2xl mx-auto">
-          <p className="text-lg text-gray-700 leading-relaxed">
+        <div className="bg-white/80 p-4 sm:p-6 rounded-lg shadow-lg backdrop-blur-sm max-w-2xl mx-auto">
+          <p className="text-base sm:text-lg text-gray-700 leading-relaxed">
             Passionate computer science student at California State University, Long Beach with a strong interest in software development and AI. I love building innovative solutions that solve real-world problems, and I'm constantly expanding my skills through personal projects and academic pursuits.
           </p>
         </div>
-        <div className="flex gap-4 justify-center mt-8">
+        <div className="flex flex-wrap gap-3 md:gap-4 justify-center mt-6 md:mt-8">
           <Button asChild variant="outline" className="gap-2">
             <a href="https://github.com/mmori7" target="_blank" rel="noopener noreferrer">
-              <Github className="w-5 h-5" />
+              <Github className="w-4 h-4 sm:w-5 sm:h-5" />
               GitHub
             </a>
           </Button>
           <Button asChild variant="outline" className="gap-2">
             <a href="https://www.linkedin.com/in/mohit77/" target="_blank" rel="noopener noreferrer">
-              <Linkedin className="w-5 h-5" />
+              <Linkedin className="w-4 h-4 sm:w-5 sm:h-5" />
               LinkedIn
             </a>
           </Button>
