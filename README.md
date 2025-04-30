@@ -1,7 +1,7 @@
 
 # Mohit Mori - Portfolio Website
 
-A modern, responsive portfolio website built with React and TypeScript.
+A modern, responsive cross platform portfolio website built with React and TypeScript.
 
 ## About Me
 Computer Science student at California State University, Long Beach with a strong passion for software development and artificial intelligence. Currently maintaining a 3.45 GPA while working on innovative projects and participating in academic organizations.
