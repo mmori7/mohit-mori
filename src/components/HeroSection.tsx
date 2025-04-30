@@ -8,7 +8,7 @@ const HeroSection = () => {
       <div className="text-center space-y-6 md:space-y-8 max-w-3xl animate-fade-in">
         <div className="relative w-40 h-40 sm:w-56 sm:h-56 md:w-64 md:h-64 lg:w-80 lg:h-80 mx-auto rounded-full overflow-hidden mb-4 md:mb-8 shadow-2xl border-4 border-white transition-transform duration-300 hover:scale-105">
           <img
-            src="/lovable-uploads/42c3c688-ea3d-43a8-b461-db0d5be31f73.png"
+            src="/lovable-uploads/5635e403-2311-4e57-bd9f-89fcf7bc2a05.png"
             alt="Mohit Mori"
             className="w-full h-full object-cover object-center"
           />
