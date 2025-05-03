@@ -13,6 +13,7 @@ const Navbar = () => {
     { title: "Education", to: "education" },
     { title: "Projects", to: "projects" },
     { title: "Skills", to: "skills" },
+    { title: "Open Source", to: "opensource" },
     { title: "Achievements", to: "achievements" },
   ];
 

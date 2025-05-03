@@ -6,6 +6,7 @@ import EducationSection from "@/components/EducationSection";
 import ProjectsSection from "@/components/ProjectsSection";
 import SkillsSection from "@/components/SkillsSection";
 import AchievementsSection from "@/components/AchievementsSection";
+import OpenSourceSection from "@/components/OpenSourceSection";
 import { useEffect } from "react";
 
 const Index = () => {
@@ -58,6 +59,10 @@ const Index = () => {
         
         <div className="fade-section">
           <SkillsSection />
+        </div>
+        
+        <div className="fade-section">
+          <OpenSourceSection />
         </div>
         
         <div className="fade-section">
