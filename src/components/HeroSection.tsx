@@ -1,8 +1,13 @@
 
 import { Github, Linkedin, FileText } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { useState } from "react";
+import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 
 const HeroSection = () => {
+  const [showResume, setShowResume] = useState(false);
+  const resumeUrl = "https://drive.google.com/file/d/17QhX7CSefVYv1AgacLes1_WSJPUmSj82/preview";
+
   return (
     <div className="min-h-[90vh] flex flex-col justify-center items-center bg-gradient-to-br from-blue-50 to-blue-100 px-4 pt-16 md:pt-20" id="hero">
       <div className="text-center space-y-6 md:space-y-8 max-w-3xl animate-fade-in">
@@ -37,14 +42,29 @@ const HeroSection = () => {
               LinkedIn
             </a>
           </Button>
-          <Button asChild variant="default" className="gap-2">
-            <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">
-              <FileText className="w-4 h-4 sm:w-5 sm:h-5" />
-              Download Resume
-            </a>
+          <Button variant="default" className="gap-2" onClick={() => setShowResume(true)}>
+            <FileText className="w-4 h-4 sm:w-5 sm:h-5" />
+            View Resume
           </Button>
         </div>
       </div>
+
+      <Dialog open={showResume} onOpenChange={setShowResume}>
+        <DialogContent className="max-w-4xl w-[90vw] h-[90vh] p-0">
+          <DialogHeader className="p-4 border-b">
+            <DialogTitle>Resume - Mohit Mori</DialogTitle>
+          </DialogHeader>
+          <div className="w-full h-full">
+            <iframe
+              src={resumeUrl}
+              className="w-full h-[80vh]"
+              title="Mohit Mori's Resume"
+              allow="autoplay"
+              frameBorder="0"
+            ></iframe>
+          </div>
+        </DialogContent>
+      </Dialog>
     </div>
   );
 };
