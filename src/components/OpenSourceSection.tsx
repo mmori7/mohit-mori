@@ -9,13 +9,13 @@ const OpenSourceSection = () => {
       name: "BatterDB",
       description: "Proposed a feature enhancement for the open-source project batterdb by developing a batch operations endpoint to support multiple stack actions (push, pop, peek, flush) in a single API call. The PR improves performance, reduces network overhead, and adds timeout handling.",
       status: "Pending review",
-      url: "https://github.com/batterdb"
+      url: "https://github.com/jh125486/batterdb"
     },
     {
       name: "uvwasi",
       description: "Implemented cross-platform ioctl support in uvwasi's poll_oneoff to populate the nbytes field with the exact number of bytes available for reading, enhancing non-blocking I/O performance and buffer allocation efficiency across Unix-like systems and Windows.",
       status: "PR #301, pending review",
-      url: "https://github.com/nodejs/uvwasi"
+      url: "https://github.com/mmori7/uvwasi"
     }
   ];
 
