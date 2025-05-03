@@ -15,7 +15,7 @@ const OpenSourceSection = () => {
       name: "uvwasi",
       description: "Implemented cross-platform ioctl support in uvwasi's poll_oneoff to populate the nbytes field with the exact number of bytes available for reading, enhancing non-blocking I/O performance and buffer allocation efficiency across Unix-like systems and Windows.",
       status: "PR #301, pending review",
-      url: "https://github.com/nodejs/uvwasi"
+      url: "https://github.com/mmori7/uvwasi"
     }
   ];
 

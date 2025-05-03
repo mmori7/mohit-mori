@@ -1,5 +1,5 @@
 
-import { Github, Linkedin } from "lucide-react";
+import { Github, Linkedin, FileText } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const HeroSection = () => {
@@ -35,6 +35,12 @@ const HeroSection = () => {
             <a href="https://www.linkedin.com/in/mohit77/" target="_blank" rel="noopener noreferrer">
               <Linkedin className="w-4 h-4 sm:w-5 sm:h-5" />
               LinkedIn
+            </a>
+          </Button>
+          <Button asChild variant="default" className="gap-2">
+            <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">
+              <FileText className="w-4 h-4 sm:w-5 sm:h-5" />
+              Download Resume
             </a>
           </Button>
         </div>
