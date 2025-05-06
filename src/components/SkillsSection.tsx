@@ -19,7 +19,7 @@ const SkillsSection = () => {
         </h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {Object.entries(skills).map(([category, skillList]) => (
-            <div key={category} className="space-y-4">
+            <div key={category} className="space-y-4 transition-all duration-300 hover:transform hover:translate-y-[-5px]">
               <h3 className="text-xl font-semibold text-blue-300">{category}</h3>
               <div className="flex flex-wrap gap-2">
                 {skillList.map((skill) => (

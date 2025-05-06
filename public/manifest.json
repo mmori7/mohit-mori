@@ -1,0 +1,22 @@
+
+{
+  "name": "Mohit Mori - Portfolio",
+  "short_name": "Mohit Mori",
+  "description": "Mohit Mori's Portfolio - Computer Science Student & Software Developer",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#111827",
+  "theme_color": "#111827",
+  "icons": [
+    {
+      "src": "/lovable-uploads/5635e403-2311-4e57-bd9f-89fcf7bc2a05.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/lovable-uploads/5635e403-2311-4e57-bd9f-89fcf7bc2a05.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

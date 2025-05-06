@@ -99,10 +99,25 @@
   body {
     @apply bg-background text-foreground font-sans;
     overflow-x: hidden;
+    -webkit-tap-highlight-color: transparent; /* Remove tap highlight on mobile */
+    touch-action: manipulation; /* Improve touch experience */
   }
   
   html {
     scroll-behavior: smooth;
+  }
+}
+
+/* Cross-platform optimizations */
+.touch-device button,
+.touch-device a {
+  min-height: 44px; /* Ensure touch targets are large enough */
+}
+
+/* Fix for iOS Safari 100vh issue */
+@supports (-webkit-touch-callout: none) {
+  .min-h-screen {
+    min-height: -webkit-fill-available;
   }
 }
 
@@ -137,4 +152,38 @@
   .card-hover {
     @apply hover:shadow-[0_0_15px_rgba(30,64,175,0.3)] transition-all duration-300;
   }
+  
+  /* Add safe area insets for notched devices */
+  .safe-padding-bottom {
+    padding-bottom: env(safe-area-inset-bottom, 0);
+  }
+  
+  .safe-padding-top {
+    padding-top: env(safe-area-inset-top, 0);
+  }
+}
+
+/* Add better scrollbar support for cross-platform */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1f2937;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #3b82f6;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #2563eb;
+}
+
+/* Firefox scrollbar */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #3b82f6 #1f2937;
 }

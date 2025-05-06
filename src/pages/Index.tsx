@@ -12,31 +12,41 @@ import { useEffect } from "react";
 const Index = () => {
   // Add intersection observer for fade-in animations
   useEffect(() => {
-    const observerOptions = {
-      root: null,
-      rootMargin: '0px',
-      threshold: 0.1
-    };
+    // Check if IntersectionObserver is supported (for cross-platform compatibility)
+    if ('IntersectionObserver' in window) {
+      const observerOptions = {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.1
+      };
 
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('animate-fade-in', 'opacity-100');
-          entry.target.classList.remove('opacity-0', 'translate-y-10');
-        }
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('animate-fade-in', 'opacity-100');
+            entry.target.classList.remove('opacity-0', 'translate-y-10');
+          }
+        });
+      }, observerOptions);
+
+      // Target all sections with the fade-in class
+      const fadeElements = document.querySelectorAll('.fade-section');
+      fadeElements.forEach(el => {
+        el.classList.add('opacity-0', 'translate-y-10', 'transition-all', 'duration-700');
+        observer.observe(el);
       });
-    }, observerOptions);
 
-    // Target all sections with the fade-in class
-    const fadeElements = document.querySelectorAll('.fade-section');
-    fadeElements.forEach(el => {
-      el.classList.add('opacity-0', 'translate-y-10', 'transition-all', 'duration-700');
-      observer.observe(el);
-    });
-
-    return () => {
-      fadeElements.forEach(el => observer.unobserve(el));
-    };
+      return () => {
+        fadeElements.forEach(el => observer.unobserve(el));
+      };
+    } else {
+      // Fallback for browsers that don't support IntersectionObserver
+      const fadeElements = document.querySelectorAll('.fade-section');
+      fadeElements.forEach(el => {
+        el.classList.add('opacity-100');
+        el.classList.remove('opacity-0', 'translate-y-10');
+      });
+    }
   }, []);
 
   return (
