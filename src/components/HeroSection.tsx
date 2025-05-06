@@ -18,31 +18,35 @@ const HeroSection = () => {
             className="w-full h-full object-cover object-center"
           />
         </div>
-        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900">
+        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 transition-all duration-500 hover:text-blue-700">
           Mohit Mori
         </h1>
-        <p className="text-lg sm:text-xl md:text-2xl text-gray-700">
+        <p className="text-lg sm:text-xl md:text-2xl text-gray-700 transition-colors duration-300">
           Computer Science Student & Software Developer
         </p>
-        <div className="bg-white/80 p-4 sm:p-6 rounded-lg shadow-lg backdrop-blur-sm max-w-2xl mx-auto">
+        <div className="bg-white/80 p-4 sm:p-6 rounded-lg shadow-lg backdrop-blur-sm max-w-2xl mx-auto transform transition-all duration-500 hover:bg-white hover:shadow-xl">
           <p className="text-base sm:text-lg text-gray-700 leading-relaxed">
             Passionate computer science student at California State University, Long Beach with a strong interest in software development and AI. I love building innovative solutions that solve real-world problems, and I'm constantly expanding my skills through personal projects and academic pursuits.
           </p>
         </div>
         <div className="flex flex-wrap gap-3 md:gap-4 justify-center mt-6 md:mt-8">
-          <Button asChild variant="outline" className="gap-2">
+          <Button asChild variant="outline" className="gap-2 transition-all duration-300 hover:scale-105 hover:bg-gray-100">
             <a href="https://github.com/mmori7" target="_blank" rel="noopener noreferrer">
               <Github className="w-4 h-4 sm:w-5 sm:h-5" />
               GitHub
             </a>
           </Button>
-          <Button asChild variant="outline" className="gap-2">
+          <Button asChild variant="outline" className="gap-2 transition-all duration-300 hover:scale-105 hover:bg-gray-100">
             <a href="https://www.linkedin.com/in/mohit77/" target="_blank" rel="noopener noreferrer">
               <Linkedin className="w-4 h-4 sm:w-5 sm:h-5" />
               LinkedIn
             </a>
           </Button>
-          <Button variant="default" className="gap-2" onClick={() => setShowResume(true)}>
+          <Button 
+            variant="default" 
+            className="gap-2 transition-all duration-300 hover:scale-105 bg-gradient-to-r from-blue-500 to-blue-700 hover:from-blue-600 hover:to-blue-800" 
+            onClick={() => setShowResume(true)}
+          >
             <FileText className="w-4 h-4 sm:w-5 sm:h-5" />
             View Resume
           </Button>
@@ -50,7 +54,7 @@ const HeroSection = () => {
       </div>
 
       <Dialog open={showResume} onOpenChange={setShowResume}>
-        <DialogContent className="max-w-4xl w-[90vw] h-[90vh] p-0">
+        <DialogContent className="max-w-4xl w-[90vw] h-[90vh] p-0 animate-scale-in">
           <DialogHeader className="p-4 border-b">
             <DialogTitle>Resume - Mohit Mori</DialogTitle>
           </DialogHeader>
