@@ -40,11 +40,11 @@ const Index = () => {
   }, []);
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-gray-900 text-white">
       <Navbar />
-      <div className="space-y-8 sm:space-y-12 md:space-y-16">
-        <HeroSection />
-        
+      <HeroSection />
+      
+      <div className="space-y-1">
         <div className="fade-section">
           <ExperienceSection />
         </div>
