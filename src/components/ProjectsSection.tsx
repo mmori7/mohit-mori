@@ -24,18 +24,18 @@ const projects = [
 
 const ProjectsSection = () => {
   return (
-    <section className="py-16 px-4 bg-gray-50" id="projects">
+    <section className="py-16 px-4 bg-gray-800" id="projects">
       <div className="max-w-5xl mx-auto">
         <h2 className="text-3xl font-bold text-center mb-12 flex items-center justify-center gap-2">
-          <Laptop className="w-8 h-8 text-blue-600" />
-          Projects
+          <Laptop className="w-8 h-8 text-blue-400" />
+          <span className="text-gradient">Projects</span>
         </h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {projects.map((project) => (
-            <Card key={project.title} className="hover:shadow-lg transition-shadow">
+            <Card key={project.title} className="hover:shadow-lg transition-shadow border border-gray-700 bg-gray-900">
               <CardHeader>
                 <CardTitle className="flex justify-between items-start">
-                  <span>{project.title}</span>
+                  <span className="text-blue-300">{project.title}</span>
                   <Badge
                     variant={
                       project.status === "completed"
@@ -44,19 +44,26 @@ const ProjectsSection = () => {
                         ? "secondary"
                         : "outline"
                     }
+                    className={
+                      project.status === "completed"
+                        ? "bg-blue-500/20 text-blue-300 hover:bg-blue-500/30"
+                        : project.status === "in-progress"
+                        ? "bg-purple-500/20 text-purple-300 hover:bg-purple-500/30"
+                        : "bg-transparent text-gray-300 border-gray-500"
+                    }
                   >
                     {project.status}
                   </Badge>
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-gray-600">{project.description}</p>
+                <p className="text-gray-300">{project.description}</p>
                 {project.link && (
                   <a
                     href={project.link}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center mt-4 text-blue-600 hover:text-blue-800"
+                    className="inline-flex items-center mt-4 text-blue-400 hover:text-blue-300"
                   >
                     <Code className="w-4 h-4 mr-2" />
                     View Code

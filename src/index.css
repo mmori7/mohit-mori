@@ -127,4 +127,14 @@
   .text-gradient {
     @apply bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-400;
   }
+  
+  /* Dark theme glass effect */
+  .dark-glass {
+    @apply bg-black/20 backdrop-blur-md border border-gray-800/50;
+  }
+  
+  /* Card hover effect */
+  .card-hover {
+    @apply hover:shadow-[0_0_15px_rgba(30,64,175,0.3)] transition-all duration-300;
+  }
 }

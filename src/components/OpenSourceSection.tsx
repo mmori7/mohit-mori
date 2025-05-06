@@ -20,34 +20,34 @@ const OpenSourceSection = () => {
   ];
 
   return (
-    <section id="opensource" className="py-16 bg-gray-50">
+    <section id="opensource" className="py-16 bg-gray-800">
       <div className="max-w-5xl mx-auto px-4">
         <div className="text-center mb-12">
-          <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4 flex items-center justify-center gap-2">
-            <GitFork className="w-8 h-8 text-blue-600" />
-            Open Source Contributions
+          <h2 className="text-3xl sm:text-4xl font-bold mb-4 flex items-center justify-center gap-2">
+            <GitFork className="w-8 h-8 text-blue-400" />
+            <span className="text-gradient">Open Source Contributions</span>
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-xl text-gray-300 max-w-3xl mx-auto">
             Active contributions to the open source community, helping to build better software for everyone.
           </p>
         </div>
 
         <div className="grid gap-8 md:grid-cols-1">
           {contributions.map((contribution, index) => (
-            <Card key={index} className="overflow-hidden border-2 border-gray-100 hover:shadow-lg transition-shadow">
-              <CardHeader className="bg-gradient-to-r from-blue-50 to-indigo-50 pb-6">
+            <Card key={index} className="overflow-hidden border border-gray-700 bg-gray-900 hover:shadow-blue-900/10 hover:shadow-lg transition-all">
+              <CardHeader className="bg-gradient-to-r from-gray-900 to-gray-800 pb-6">
                 <CardTitle className="flex justify-between items-start">
-                  <span className="text-2xl font-bold text-blue-800">{contribution.name}</span>
-                  <span className="bg-blue-100 text-blue-800 text-sm px-3 py-1 rounded-full">
+                  <span className="text-2xl font-bold text-blue-300">{contribution.name}</span>
+                  <span className="bg-blue-900/30 text-blue-300 text-sm px-3 py-1 rounded-full border border-blue-800/40">
                     {contribution.status}
                   </span>
                 </CardTitle>
               </CardHeader>
               <CardContent className="pt-6">
-                <p className="text-gray-700 mb-6 text-lg leading-relaxed">
+                <p className="text-gray-300 mb-6 text-lg leading-relaxed">
                   {contribution.description}
                 </p>
-                <Button asChild variant="outline" className="gap-2 mt-4">
+                <Button asChild variant="outline" className="gap-2 mt-4 border-gray-700 text-blue-300 hover:text-blue-200 hover:bg-gray-800">
                   <a href={contribution.url} target="_blank" rel="noopener noreferrer">
                     <Github className="w-5 h-5" />
                     View Project
@@ -59,10 +59,10 @@ const OpenSourceSection = () => {
         </div>
 
         <div className="mt-16 text-center">
-          <p className="text-gray-600 mb-6">
+          <p className="text-gray-300 mb-6">
             Interested in collaborating on open source projects? Let's connect!
           </p>
-          <Button asChild variant="default" className="gap-2">
+          <Button asChild variant="default" className="gap-2 bg-blue-600/20 hover:bg-blue-600/30 text-blue-300 border border-blue-700/50">
             <a href="https://github.com/mmori7" target="_blank" rel="noopener noreferrer">
               <Github className="w-5 h-5" />
               View GitHub Profile
