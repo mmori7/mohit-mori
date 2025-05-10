@@ -13,12 +13,20 @@ const projects = [
   {
     title: "Cosmic Habit Quest",
     description: "A gamified habit tracking application",
-    status: "in-progress",
+    link: "https://github.com/Ronitsabhaya75/Habit-Quest",
+    status: "completed",
   },
   {
     title: "AI Mental Health Helper",
     description: "Mental health support powered by artificial intelligence",
-    status: "new",
+    link: "https://github.com/mmori7/Ai-mental-health-helper",
+    status: "completed",
+  },
+  {
+    title: "Data Jarvis",
+    description: "Intelligent data processing and analysis tool",
+    link: "https://github.com/mmori7/data-jarvis",
+    status: "completed",
   },
 ];
 
