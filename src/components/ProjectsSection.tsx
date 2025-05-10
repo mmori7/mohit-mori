@@ -28,6 +28,12 @@ const projects = [
     link: "https://github.com/mmori7/data-jarvis",
     status: "completed",
   },
+  {
+    title: "Guardian AI",
+    description: "Smart call filtering and protection system",
+    link: "https://github.com/mmori7/call-guardian-ai",
+    status: "in-progress",
+  },
 ];
 
 const ProjectsSection = () => {
