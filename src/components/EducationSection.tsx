@@ -22,7 +22,7 @@ const EducationSection = () => {
                 <div className="mt-4 bg-gray-700 h-1 w-24 mx-auto rounded-full overflow-hidden">
                   <div className="bg-blue-400 h-full w-4/5"></div>
                 </div>
-                <p className="text-gray-400 mt-4 text-sm">2021 - 2025</p>
+                <p className="text-gray-400 mt-4 text-sm">Grad: May 2027</p>
               </div>
             </CardContent>
           </Card>
